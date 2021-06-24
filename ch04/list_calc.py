@@ -10,9 +10,12 @@ for i in score:
     print("i=%d, sum=%d" % (i,sum))  #합계과정 출력
 
     
-print("개수: %d개" % count)
 
-print("합계: %d점" % sum)
+#print("개수: %d개" % count)
+print("개수: {0}개".format(count))
+
+#print("합계: %d점" % sum)
+print("합계: {0}점".format(sum)) # 0은 안 써두 됨
 
 avg = sum / count
 print("평균: %.1f점" % avg)  # .1f 하면 소수점 첫째자리까지 나

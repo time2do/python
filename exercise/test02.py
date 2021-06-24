@@ -73,3 +73,34 @@ print(msg)
 s = "a:b:c:d"
 s = s.split(':')  # ':'를 기준으로 나뉘어진
 print(s)
+
+#8번 - (1,2,3)튜플에 값 4를 추가하여 출력
+
+a = (1,2,3)
+a = a + (4,)
+print(a)
+
+#9번
+a = dict()  #빈 딕셔너리 생성
+
+a['name'] = 'python'
+print(a)
+
+a[('a',)]='python'
+print(a)
+
+a[250]='python'
+print(a)
+
+#10 딕셔너리 a에서 B에 해당되는 값을 추출
+
+a = {'A':90,'B':80,'C':70}
+result = a.pop('B')
+print(a)
+print(result)
+
+#11 a 리스트에서 중복 숫자를 제거
+a = [1,1,1,2,2,3,3,3,4,4,5]
+aSet = set(a) #중복 제
+b = list(aSet) #list형으로 변환
+print(b)
