@@ -32,3 +32,4 @@ for i in range(4):
     n += 50
     
 
+t.mainloop()
