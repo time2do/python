@@ -14,7 +14,7 @@ def select_data():
     cur.execute(sql)
 
     print("데이터 전체 조회")
-    rs = cur.fetchall() #꺼내온 자료
+    rs = cur.fetchall() #꺼내온 자료 객체
     for i in rs:
         print(i)
 

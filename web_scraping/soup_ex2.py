@@ -19,8 +19,15 @@ html_str = """
 </html>
 """
 
-soup = BeautifulSoup(html_str, 'html.parser')
-#print(soup)
-ul = soup.find('ul') #ul를 찾아라 (처음꺼만 찾음)
-print(ul)
-print(ul.text) # 글짜만 나옴
+contents = BeautifulSoup(html_str, 'html.parser')
+ul = contents.find('ul', {'class': 'lang'})  #item이 lang인 ul 를 찾기
+#print(ul)
+
+#li = ul.find('li')  이렇게 하면 첫번째줄만 나옴
+#print(li)
+
+#중국어 찾고 싶을때
+
+lis = ul.find_all('li')
+print(lis)
+print(lis[2].text)
