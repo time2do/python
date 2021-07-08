@@ -8,17 +8,17 @@ def select_data():
 
     # 자료 조회 - SQL DML (select)
 
-    #sql = "select age from member" - age만 보고싶을때
+    # sql = "select age from member" - age만 보고싶을때
     sql = "select * from member" # 전체 보고 싶을때
 
     cur.execute(sql)
 
     print("데이터 전체 조회")
-    rs = cur.fetchall() #꺼내온 자료 객체
+    rs = cur.fetchall() # 꺼내온 자료 객체
     for i in rs:
         print(i)
 
- # 보기만 하기 때문에 commit 은 필요없다
+    # 보기만 하기 때문에 commit 은 필요없다
     conn.close()
 
 if __name__ == "__main__":

@@ -20,7 +20,7 @@ html_str = """
 """
 
 soup = BeautifulSoup(html_str, 'html.parser')
-#print(soup)
-ul = soup.find('ul') #ul를 찾아라 (처음꺼만 찾음)
+# print(soup)
+ul = soup.find('ul')  # ul를 찾아라 (처음꺼만 찾음)
 print(ul)
-print(ul.text) # 글짜만 나옴
+print(ul.text)  # 글짜만 나옴

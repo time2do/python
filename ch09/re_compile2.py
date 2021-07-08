@@ -1,6 +1,8 @@
 # 정규 표현식 예제
 import re
 
+# p = re.compile('\w')  [0-9A-Za-z]
+
 p = re.compile('[a-z]+')
 
 m = p.match("2021 incheon")  # 처음에 일치하는 문자가 없어서 None

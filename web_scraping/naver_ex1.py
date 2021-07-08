@@ -1,4 +1,4 @@
-#네이버에서 원하는 태그 찾기
+# 네이버에서 원하는 태그 찾기
 
 from urllib import request
 from bs4 import BeautifulSoup

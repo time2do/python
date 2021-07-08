@@ -60,3 +60,42 @@ print(list(filter(lambda x: x > 0, li)))
 li = [1, 2, 3, 4]
 print(list(map(lambda x: x*3, li)))
 
+#7
+
+def find_max(li):
+    max = li[0]
+    for i in li:
+        if max < i:
+            max = i
+
+    """ 
+    max = li[0]
+    n = len(li)
+    for i in range(n):
+        if max < li[i]:
+            max = li[i]
+    """
+    return max
+
+d1 = [-8, 2, 7, 5, -3, 5, 0, 1]
+max2 = find_max(d1)
+print(max2)
+"""
+max = max(d1)
+min = min(d1)
+sum = max + min
+print(sum)
+"""
+
+
+# 12 - time 모듈 사용하여 현재 날짜와 시간을 다음과 같은 형식으로 출력
+# 2018/04/03 17:20:32
+
+import time
+import datetime
+
+now1 = datetime.datetime.now()
+print(now1.strftime("%Y/%m/%d %H:%M:%S"))
+
+now2 = time.strftime("%Y/%m/%d %H:%M:%S")
+print(now2)

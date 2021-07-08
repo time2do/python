@@ -1,4 +1,4 @@
-#실시간 주가 가격확인
+# 실시간 주가 가격확인
 
 from urllib import request
 from bs4 import BeautifulSoup
@@ -11,8 +11,8 @@ def getcontent():
 
 cont = getcontent()
 no_today = cont.find('p', {'class': 'no_today'})
-#print(no_today)
+# print(no_today)
 
-price = no_today.find('span',{'class': 'blind'})
+price = no_today.find('span', {'class': 'blind'})
 print(price)
 print("삼성전자 주가: {}원".format(price.text))

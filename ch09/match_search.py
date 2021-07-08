@@ -8,7 +8,8 @@ print(m.start())
 print(m.end())
 print(m.span())
 
-#search
+# search
+
 p2 = re.compile('[a-z]+')
 m2 = p.search("2021 incheon")
 print(m2)
